@@ -6,6 +6,7 @@
     --secondary-text-color: #757575;
     --secondary-footer-text-color: rgba(255, 255, 255, 0.6);
     --footer-background-color: #2F303A;
+    --main-icon-color: #AFB1B8;
 }
 /* START COMMON STYLES */
 body {
@@ -230,6 +231,17 @@ button {
     padding: 30px 0;
     margin-top: -5px;
 }
+.socialicon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+.social-icon {
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
 /* END TEAM STYLE */
 /* START OUR CLIENTS */
 .list.clients-list {
@@ -251,6 +263,7 @@ button {
     top: 0;
     bottom: 0;
     right: 0;
+    fill: var(--main-icon-color);
     }
 .icon-item {
     position: relative;
@@ -300,10 +313,21 @@ button {
     width: 70px;
     height: 70px;
 }
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+    width: 20px;
+    height: 20px;
+}
 /* END OUR CLIENTS */
 /* START FOOTER STYLE */
 footer {
     padding: 60px 0;
+}
+.container.footer-container {
+    display: flex;
+    flex-wrap: nowrap;
 }
 .footer-logo {
     margin: 0 0 20px;
@@ -332,6 +356,28 @@ margin-bottom: 9px;
 }
 .item-footer.link {
     padding-top: 10px;
+}
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.socialicon-footerlist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 206px;
+}
+.footer-column2 {
+    padding-left: 70px;
+}
+.social-item {
+    flex-basis: calc((100% / 4) - 30px);
+}
+.social-item:not(:last-child) {
+    margin-right: 10px;
 }
 /* END FOOTER STYLE */
 /* START FILTER OF PROJECTS */
@@ -403,9 +449,40 @@ p.name-project {
 .menu-item:focus {
     color: var(--activity-color);
 }
+.menu-nav-item > .menu-item:hover .icon-envelope,
+.menu-nav-item > .menu-item:focus .icon-envelope,
+.menu-nav-item > .menu-item:hover .icon-smartphone,
+.menu-nav-item > .menu-item:focus .icon-smartphone {
+    fill: var(--activity-color);
+}
 .filter-button:hover,
 .filter-button:focus {
     color:var(--page-color);
     background-color: var(--activity-color);
 }
+.item-client:hover .icon,
+.item-client:focus .icon{
+    fill: var(--activity-color);
+    }
+.item-client:hover .clients-link,
+.item-client:focus .clients-link{
+    border-color: var(--activity-color);
+    }
+.social-icon:hover .icon,
+.social-icon:focus .icon {
+    fill: var(--page-color);
+}
+.social-icon:hover,
+.social-icon:focus {
+    background-color: var(--activity-color);
+    border-radius: 50%;
+    animation: scale 300ms linear;
+}
 /* END ACTIONS STYLES  */
+/* START ANIMATION */
+@keyframes scale {
+    25% {transform: scale(1.15)}
+    50% {transform: scale(1.3)}
+    75% {transform: scale(1.15)}
+    100% {transform: scale(1)}
+}
