@@ -252,6 +252,23 @@ button {
     bottom: 0;
     right: 0;
     }
+.icon-item {
+    position: relative;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
 .icon-client1 {
     width: 41px;
     height: 47px;
@@ -275,6 +292,13 @@ button {
 .icon-client6 {
     width: 94px;
     height: 44px;
+}
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+    width: 70px;
+    height: 70px;
 }
 /* END OUR CLIENTS */
 /* START FOOTER STYLE */
@@ -368,7 +392,7 @@ p.name-project {
     margin-left: -30px;
 }
 .border-project {
-    width: 370px;
+    width: 370px; 
     border: 1px solid #EEEEEE;
     margin: 0;
     padding: 0;
