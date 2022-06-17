@@ -10,8 +10,6 @@
 }
 /* START COMMON STYLES */
 body {
-    max-width: 1600px;
-    margin: 0 auto;
     font-family: Roboto, sans-serif, Arial, sans-serif;
     color: var(--main-text-color);
     background-color: var(--page-color);
@@ -115,9 +113,11 @@ button {
 /* END HEADER STYLE*/
 /* START HERO STYLE*/
 .hero.section-item {
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 200px 0;
-    background-image: linear-gradient(
-    to right,rgba(0, 0, 0, 0.4),rgba(47, 48, 58, 0.4)),
+    background-image: 
+    linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     url(../images/main/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,9 +128,6 @@ button {
 .hero-title{
     margin: 0 auto;
 }
-/* .hero-style {
-    background-color: var(--footer-background-color);
-} */
 .order {
     display: block;
     margin: 50px auto 0;
@@ -151,16 +148,23 @@ button {
 }
 /* END HERO STYLE*/
 /* START ADVANTAGES STYLE */
-.adventages section-item {
-    padding: 0;
-}
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .advantages-list .item {
     width: 270px;
     margin-right: 30px;
+}
+.advantages-list .icon-item {
+    border-radius: 4px;
+}
+.item .icon-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .advantages-list .item:nth-child(4n) {
     margin-right: 0;
@@ -242,8 +246,14 @@ button {
 }
 .social-icon {
     position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 /* END TEAM STYLE */
 /* START OUR CLIENTS */
@@ -251,6 +261,10 @@ button {
     margin-left: -30px;
 }
 .clients-link {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 170px;
     height: 92px;
@@ -260,12 +274,12 @@ button {
     margin-left: 30px;
 }
 .icon {
-    position: absolute;
+    /* position: absolute;
     margin: auto;
     left: 0;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 0; */
     fill: var(--main-icon-color);
     }
 .icon-item {
@@ -465,23 +479,23 @@ p.name-project {
     background-color: var(--activity-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.item-client:hover .icon,
-.item-client:focus .icon{
+.client-link:hover .icon,
+.client-link:focus .icon {
     fill: var(--activity-color);
     }
-.item-client:hover .clients-link,
-.item-client:focus .clients-link{
+.client-link:hover .clients-link,
+.client-link:focus .clients-link {
     border-color: var(--activity-color);
     }
-.social-icon:hover .icon,
-.social-icon:focus .icon {
+.social-link:hover .icon,
+.social-link:focus .icon {
     fill: var(--page-color);
 }
-.social-icon:hover,
-.social-icon:focus {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
     background-color: var(--activity-color);
     border-radius: 50%;
-    animation: scale 300ms linear;
+    animation: scale 300ms linear; 
 }
 .border-project:hover,
 .border-project:focus {
