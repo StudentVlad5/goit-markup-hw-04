@@ -116,11 +116,14 @@ button {
 /* START HERO STYLE*/
 .hero.section-item {
     padding: 200px 0;
-    background-image: url(../images/main/main.jpg);
+    background-image: linear-gradient(
+    to right,rgba(0, 0, 0, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/main/main.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     border: 1px solid #000000;
-    background-color: var(--footer-background-color);
+    /* background-color: rgba(47, 48, 58); */
 }
 .hero-title{
     margin: 0 auto;
