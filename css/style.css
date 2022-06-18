@@ -396,6 +396,9 @@ margin-bottom: 9px;
 .social-item:not(:last-child) {
     margin-right: 10px;
 }
+.icon.icon-footer {
+    fill:#FFFFFF;
+}
 /* END FOOTER STYLE */
 /* START FILTER OF PROJECTS */
 .do-not-show {
