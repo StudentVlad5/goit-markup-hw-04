@@ -15,9 +15,7 @@
 --second-family: "Raleway", sans-serif;
 }
 
-*,
-*::before,
-*::after {
+* {
 	box-sizing: border-box;
 }
 
@@ -337,6 +335,7 @@ margin-top: 8px;
 }
 
 .social__item {
+width: 40px;
 margin: 5px;
 }
 
