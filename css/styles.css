@@ -462,8 +462,12 @@ padding: 100px 0;
 
 .footer .container {
 justify-content: start;
-gap: 120px;
+/* gap: 120px; */
 align-items: baseline;
+margin-right: 120px;
+}
+
+.footer__column1 {
 margin-right: 120px;
 }
 
@@ -495,6 +499,6 @@ color: var(--cloud);
 }
 
 
-.footer .social__item:hover .social__link {
+.footer .social__link:hover {
 background-color: var(--green);
 }
