@@ -386,8 +386,8 @@ object-fit: cover;
 }
 
 
-.poster__card--img:hover .poster__card_contant,
-.poster__card--img:focus .poster__card_contant{
+.portfolio__item:hover .poster__card_contant,
+.portfolio__item:focus .poster__card_contant {
 transform: translateY(0%);
 }
 
